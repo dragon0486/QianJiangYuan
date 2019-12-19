@@ -3,6 +3,7 @@
 sudo apt-get update 
 sudo apt-get update && sudo apt-get install -y --no-install-recommends \
         apt-utils \
+        dnsutils \
         software-properties-common \
         build-essential \
         cmake \

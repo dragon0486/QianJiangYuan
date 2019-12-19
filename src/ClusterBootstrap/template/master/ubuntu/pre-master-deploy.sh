@@ -7,6 +7,7 @@ sudo mkdir -p /opt/addons
 sudo mkdir -p /opt/addons/kube-addons
 sudo mkdir -p /opt/bin
 sudo mkdir -p /opt/cni/bin
+sudo mkdir -p /etc/flannel
 sudo chown -R $USER /etc/kubernetes
 sudo chown -R $USER /etc/flannel
 sudo chown -R $USER /opt/bin

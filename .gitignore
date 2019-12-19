@@ -62,3 +62,4 @@ src/**/dotnet/WebPortal/hosting.json
 /.vs/DLWorkspace/v15/.suo
 
 cluster-autoscaler
+.idea

@@ -1,0 +1,26 @@
+cluster_name: skypulis1
+azure_cluster:
+  skypulis1:
+    azure_location: [ "chinanorth2" ]
+    cdn:
+      name: skypulis1
+      sku: Standard_LRS
+      cdnsku: Standard_Verizon
+      cors: GET
+      containers:
+        public:
+          public-access: blob
+        private:
+          public-access: "off"
+
+    storages: [ "cdn" ]
+network:
+  domain: sigsus.cn
+  container-network-iprange: "10.2.0.0/16"
+etcd_node_num: 1
+machines:
+  apulis-china-infra01:
+    role: infrastructure
+datasource: MySQL
+mysql_password: root
+useclusterfile : true

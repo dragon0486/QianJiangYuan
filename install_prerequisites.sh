@@ -1,5 +1,14 @@
 #!/bin/bash 
 
+which sudo
+if [ $? -eq 0 ]
+then
+    echo "sudo was installed"
+else
+    apt-get update
+    apt-get install sudo
+fi
+
 sudo apt-get update 
 sudo apt-get update && sudo apt-get install -y --no-install-recommends \
         apt-utils \
